@@ -46,7 +46,6 @@ class NoDict:
 
     def get(self, key):
         """gets key/val pair"""
-        # Your code here
         key_value = Node(key)
         bucket = self.buckets[key_value.hash % self.size]
         for key_val in bucket:
@@ -56,10 +55,8 @@ class NoDict:
 
     def __getitem__(self, key):
         """gets NoDict entry and imitates the square bracket functionality"""
-        # Your code here
         return self.get(key)
 
     def __setitem__(self, key, value):
         """sets the value of a key/val pair by imitating square bracket notation"""
-        # Your code here
         self.add(key, value)
