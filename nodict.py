@@ -19,7 +19,7 @@ class Node:
     def __eq__(self, other):
         """allows for the comparison 
         of node objects to the node class"""
-        return self.key is other.key
+        return self.key == other.key
 
 
 
